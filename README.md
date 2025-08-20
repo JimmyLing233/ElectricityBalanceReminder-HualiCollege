@@ -1,0 +1,2 @@
+# ElectricityBalanceReminder-HualiCollege
+适用于广东工业大学华立学院（广州华立学院）的自动电费余额提醒脚本
