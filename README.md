@@ -18,7 +18,7 @@ pip install requests
 2. 进入“华立电表”并选择类型和校区
 3. 在我的信息中绑定电表
 4. 返回“用户中心”，在点击“缴费查询”后不要等待加载直接点击右上角三个点复制链接（如果没有此选项请重复此步骤，手速一定要快）
-5. 你会得到形如下述的一串链接，请记下memid、openid、operatorcode里的（“=”后，“&”前）的参数
+5. 你会得到形如下述的一串链接，请记下memid、openid、operatorcode里（“=”后，“&”前）的参数
 ```url
 https://dbwx.hlsywy.com/web/MWeb/payusereqlist.aspx?type=2&memid=xxx&openid=xxxxxxxxxxxxxxx&operatorcode=XXXX
 ```
