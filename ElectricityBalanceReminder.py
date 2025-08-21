@@ -41,7 +41,7 @@ def send_balance_reminder(message, sct_key):
 # 以下参数填写时请去除<>及其中的内容
 config = {
     "openid": "<openid>"， # 参考教程中的获取方法
-    "memid": "<memid>"， # 参考教程中的获取方法
+    "memid": "<memid>", # 参考教程中的获取方法
     "operatorcode": "<operatorcode>", # 校区编号？参考教程中的获取方法
     "sct_key": "<key>", # server酱推送key，请事先注册
     "reminder_threshold": 50  # 余额提醒阈值（低于此值将推送提醒）
