@@ -2,7 +2,7 @@
 <h1>ElectricityBalanceReminder-HualiCollege</h1>
 适用于广东工业大学华立学院（广州华立学院）的自动电费余额提醒脚本<br><br>
   
-[![Licence](https://img.shields.io/badge/LICENSE-MIT-green.svg?style=for-the-badge)](JimmyLing233/ElectricityBalanceReminder-HualiCollege/blob/main/LICENSE)
+[![Licence](https://img.shields.io/badge/LICENSE-MIT-green.svg?style=for-the-badge)](LICENSE)
 
 </div>
 
@@ -40,4 +40,35 @@ config = {
     "reminder_threshold": 50  # 余额提醒阈值（低于此值将推送提醒）
 }
 ```
+## 运行
+此脚本支持本地运行和[青龙面板](https://github.com/whyour/qinglong)。
+也可以尝试将其部署于云函数等方式运行（请自行测试）
 
+### 本地运行
+```bash
+python ./ElectricityBalanceReminder.py
+```
+
+### 青龙面板
+1. 点击左边栏“订阅管理”
+2. 点击右上角“创建订阅”
+3. 依次将以下内容输入至其中
+```text
+名称：<自拟>
+链接：https://github.com/JimmyLing233/ElectricityBalanceReminder-HualiCollege.git
+定时规则：2 2 28 * *
+白名单：ElectricityBalanceReminder
+文件后缀：py
+```
+4. 点击“确定”后点击“运行”等待拉取，拉取成功后请点击右侧三个点并选择“禁用”避免后续自动拉取导致的配置清空。
+5. 点击左边栏“定时任务”找到刚才拉取的项目
+6. 点击“命令/脚本”栏目下的链接跳转至文件编辑界面按照上述修改文件中的参数部分。
+7. 您可以返回“定时任务”中测试并调整定时运行配置
+
+## 免责声明
+**本工具仅供学习和研究使用，使用本工具所产生的任何后果由使用者自行承担。<br>
+本工具僅供學習和研究使用，使用本工具所產生的任何後果由使用者自行承擔。<br>
+This tool is only for learning and research purposes, and any consequences arising from the use of this tool are borne by the user.**
+
+## 许可证
+[MIT License](LICENSE)
